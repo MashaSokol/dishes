@@ -1,0 +1,72 @@
+.breakfast {
+    height: calc(100% - 10px);
+    width: calc(40% - 10px);
+    margin: 5px;
+    background-color: honeydew;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lunch {
+    height: calc(100% - 10px);
+    width: calc(60% - 10px);
+    margin: 5px;
+    background-color: honeydew;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dinner {
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    margin: 5px;
+    background-color: honeydew;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.image {
+    height: 65%;
+    margin: 0 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right:  auto;
+}
+.button-container-top-height {
+    height: 25%;
+}
+.button-container-bottom-height {
+    height: 25%;
+}
+@media screen and (max-width: 750px) {
+    .button-container {
+        flex-direction: column;
+    }
+    .breakfast {
+        width: calc(100% - 10px);
+        height: calc(50% - 10px);
+    }
+    .lunch {
+        width: calc(100% - 10px);
+        height: calc(50% - 10px);
+    }
+    .button-container-top-height {
+        height: 36%;
+        max-height: 180px;
+    }
+    .button-container-bottom-height {
+        height: 18%;
+        max-height: 90px;
+    }
+}
